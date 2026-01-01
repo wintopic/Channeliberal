@@ -29,7 +29,6 @@
   "devDependencies": {
     "@antfu/eslint-config": "^6.7.3",
     "@astrojs/cloudflare": "^12.6.12",
-    "wrangler": "^3.99.0",
     "@astrojs/netlify": "^6.6.3",
     "@astrojs/node": "^9.5.1",
     "@astrojs/vercel": "^9.0.2",
