@@ -12,7 +12,8 @@
     "astro": "astro",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "postinstall": "test -d .git && simple-git-hooks || true"
+    "postinstall": "test -d .git && simple-git-hooks || true",
+    "deploy": "astro build && wrangler pages deploy ./dist"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.14",
@@ -47,7 +48,8 @@
     "prettier-plugin-astro": "^0.14.1",
     "simple-git-hooks": "^2.13.1",
     "std-env": "^3.10.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "wrangler": "^4.22.0"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
